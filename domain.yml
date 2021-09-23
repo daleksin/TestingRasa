@@ -1,0 +1,63 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- animal_description
+- animal_tiger
+- animal_fish
+- animal_wolf
+- animal_lion
+- animal_small_cat
+- animal_dolphine
+- animal_elephant
+- animal_shark
+- animal_cat
+- animal_dog
+entities:
+- leg_count
+- has_proboscis
+- has_horn
+- can_swim
+- has_tail
+- can_fly
+- habitat
+- animal
+- appearence
+- body_part
+- size
+- title
+- action
+- activity_time
+responses:
+  utter_guess_fish:
+  - text: Is it a fish?
+  utter_guess_tiger:
+  - text: Is it a tiger?
+  utter_guess_lion:
+  - text: Is it a lion?
+  utter_happy:
+  - text: Is it a wolf?
+  utter_guess_fox:
+  - text: Is it a fish?
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_game_start:
+  - text: Hi, welcome to the guess the animal game. Please describe your animal to me :)
+  utter_guess_dog:
+  - text: Is it a dog?
+  utter_guess_cat:
+  - text: Is it a cat?
+  utter_guess_dolphine:
+  - text: Is it a dolphine?
+  utter_game_end:
+  - text: Thank you for playing!
+actions:
+- animal_small_cat

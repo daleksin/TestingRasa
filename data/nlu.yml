@@ -1,0 +1,93 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - bob
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: animal_tiger
+  examples: |
+    - this is a big [cat](animal) with [stripes](appearence)
+    - it's big [cat](animal) with [stripes](appearence)
+- intent: animal_wolf
+  examples: |
+    - animal has [4](leg_count) legs, a [tail](body_part) and it lives in the [forest](habitat)
+- intent: animal_lion
+  examples: |
+    - this is a [cat](animal), that lives in [savana](habitat)
+    - it's a big [cat](animal), that lives in [Savana](habitat). they live in pride and have a [mane](body_part).
+    - it's a [king](title) of the [jungles](habitat)!
+- intent: animal_description
+  examples: |
+    - the the animal has [horn](body_part)
+- intent: animal_fish
+  examples: |
+    - this animal has no legs, [a tail](has_tail) and [swims](can_swim) in the [water](habitat)
+    - it [swims](can_swim) in the river, [has](has_tail) [a tail](has_tail), and [gils](body_part).
+- intent: animal_small_cat
+  examples: |
+    - it has [4](leg_count) legs and lives at [home](habitat) with me
+    - it's a [small animal](size), lives at home with me, has [4](leg_count) paws and a long [tail](has_tail). It runs around at night, has sharp [claws](body_part)
+    - it's [furry](body_part) and runs at [night](activity_time). has sharp [claws](body_part)
+- intent: animal_dolphine
+  examples: |
+    - [swims](can_swim) in the oceans and seas, [it](can_swim) helps [drawing people](action)
+- intent: animal_shark
+  examples: |
+    - leaves in the [oceans](habitat) and [seas](habitat), has [large teeth](body_part), there is a movie called [Jaws](body_part)
+- intent: animal_elephant
+  examples: |
+    - it has [4](leg_count) legs and [proboscis](body_part)
+- regex: leg_count
+  examples: |
+    - \d(?=\slegs|\sleg)
+- regex: tail_count
+  examples: |
+    - \d(?=\stails|\stail)

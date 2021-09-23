@@ -1,0 +1,38 @@
+version: "2.0"
+stories:
+- story: guess cat
+  steps:
+  - intent: greet
+  - action: utter_game_start
+  - intent: animal_small_cat
+  - action: utter_guess_cat
+  - intent: affirm
+  - action: utter_game_end
+- story: guess dog
+  steps:
+  - intent: greet
+  - action: utter_game_start
+  - intent: animal_dog
+  - action: utter_guess_dog
+  - intent: affirm
+  - action: utter_game_end
+- story: guess dog
+  steps:
+  - intent: greet
+  - action: utter_game_start
+  - intent: animal_small_cat
+  - action: utter_guess_cat
+  - intent: deny
+  - action: utter_guess_dog
+  - intent: affirm
+  - action: utter_game_end
+- story: guess cat
+  steps:
+  - intent: greet
+  - action: utter_game_start
+  - intent: animal_dog
+  - action: utter_guess_dog
+  - intent: deny
+  - action: animal_small_cat
+  - intent: affirm
+  - action: utter_game_end
